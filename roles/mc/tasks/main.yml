@@ -1,1 +1,27 @@
 ---
+-   name: Creates minecraft directory
+    file:
+        path: "{{ remote_mc_dir }}"
+        state: directory
+        mode: "0755"
+        owner: "{{ user }}"
+        group: "{{ group }}"
+
+-   name: download server.jar
+    get_url:
+        url: https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
+        dest: "{{ remote_mc_dir }}/minecraft_server.jar"
+        mode: a+x
+        owner: "{{ user }}"
+        group: "{{ group }}"
+
+-   name: create eula.txt file to be able to execute the server
+    template:
+        src: eula.txt
+        dest: "{{ remote_mc_dir }}/eula.txt"
+        mode: "0644"
+        owner: "{{ user }}"
+        group: "{{ group }}"
+
+-   name: execute the server
+    shell: java -Xmx1024M -Xms1024M -jar "{{ remote_mc_dir }}/minecraft_server.jar" nogui

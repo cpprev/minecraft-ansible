@@ -1,0 +1,6 @@
+---
+
+user: "prev"
+group: "prev"
+
+remote_mc_dir: "/etc/minecraft"
