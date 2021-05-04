@@ -18,6 +18,6 @@
 
     ansible-playbook -i hosts --become --ask-become-pass --extra-vars "ansible_password=toto123lol" run-server.yml
 
-# Stop the server (when command above is executed and running)
+# Stop the server (when command above is running)
     
     CTRL + C
