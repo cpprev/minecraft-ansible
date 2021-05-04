@@ -1,6 +1,7 @@
 # What to change to adapt to your infrastructure
 
-    file "hosts" and change ansible_host variable
+    file "hosts" :
+    - change ansible_host variable
 
     file "group_vars/all" :
     - change user and group variables
