@@ -10,15 +10,15 @@
 
 ### What to change to adapt to your infrastructure
 
-    file "hosts" :
+in file "hosts" :
     - change "ansible_host" variable
 
-    file "group_vars/all" :
+in file "group_vars/all" :
     - change "user" and "group" variables
     - change "mc_dl_link" variable to the minecraft server download link you want to deploy 
       (currently 1.16.X, see : https://www.minecraft.net/en-us/download/server)
 
-    file "roles/mc/templates/server.properties" :
+in file "roles/mc/templates/server.properties" :
     - adapt to the server properties you want to use for your server
 
 ### Install the server prerequisites
