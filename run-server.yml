@@ -4,6 +4,6 @@
 
     tasks:
     -   name: execute the server
-        shell: java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+        command: java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
         args:
             chdir: "{{ remote_mc_dir }}"
