@@ -2,17 +2,19 @@
 
 ---
 
-:pushpin: This repository's aim is to provide ansible playbooks to deploy and run a minecraft server
+:pushpin: This repository's aim is to provide ansible playbooks to deploy and run a minecraft server.
+
+:pushpin: You will need to change one or two configuration variables in order for this to work on your infrastructure.
 
 ---
 
 ### What to change to adapt to your infrastructure
 
     file "hosts" :
-    - change ansible_host variable
+    - change "ansible_host" variable
 
     file "group_vars/all" :
-    - change user and group variables
+    - change "user" and "group" variables
     - change mc_dl_link variiables to the minecraft server version you want to deploy
 
     file "roles/mc/templates/server.properties" :
