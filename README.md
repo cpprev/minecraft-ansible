@@ -24,9 +24,13 @@ in file "roles/mc/templates/server.properties" :
 
     - adapt to the server properties you want to use for your server
 
+---
+
 ## Install the server prerequisites
 
     ansible-playbook -i hosts --become --ask-become-pass --extra-vars "ansible_password=toto123lol" install-server.yml
+
+---
 
 ## Run the server (listens on port 25565)
 
