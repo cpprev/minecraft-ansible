@@ -17,7 +17,7 @@
 
 -   name: copy eula.txt file to be able to execute the server
     template:
-        src: eula.txt
+        src: "eula.txt.j2"
         dest: "{{ remote_mc_dir }}/eula.txt"
         mode: "0644"
         owner: "{{ user }}"
@@ -25,7 +25,7 @@
 
 -   name: copy server.properties file
     template:
-        src: server.properties
+        src: "server.properties.j2"
         dest: "{{ remote_mc_dir }}/server.properties"
         mode: "0644"
         owner: "{{ user }}"
