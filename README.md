@@ -2,7 +2,9 @@
 
     file "hosts" and change ansible_host variable
 
-    file "group_vars/all" and change user and group variables
+    file "group_vars/all" :
+    - change user and group variables
+    - change mc_dl_link variiables to the minecraft server version you want to deploy
 
 # Install the server prerequisites
 
