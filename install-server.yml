@@ -1,5 +1,5 @@
 -   hosts: mc_server
-    remote_user: prev
+    remote_user: "{{ user }}"
     roles:
     -   base
     -   java

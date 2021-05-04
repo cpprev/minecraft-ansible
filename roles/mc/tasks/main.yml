@@ -22,6 +22,3 @@
         mode: "0644"
         owner: "{{ user }}"
         group: "{{ group }}"
-
--   name: execute the server
-    shell: java -Xmx1024M -Xms1024M -jar "{{ remote_mc_dir }}/minecraft_server.jar" nogui
