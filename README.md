@@ -7,6 +7,9 @@
     - change user and group variables
     - change mc_dl_link variiables to the minecraft server version you want to deploy
 
+    file "roles/mc/templates/server.properties" :
+    - adapt to the server properties you want to use for your server
+
 # Install the server prerequisites
 
     ansible-playbook -i hosts --become --ask-become-pass --extra-vars "ansible_password=toto123lol" install-server.yml
