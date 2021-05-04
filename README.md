@@ -31,7 +31,7 @@ in file "roles/mc/templates/server.properties.j2" :
 ## Install the server prerequisites
 
     ansible-playbook -i hosts --become --ask-become-pass install-server.yml
-    (after which you need to enter your sudo password if required on remote host
+    (after which you need to enter your sudo password if required on remote host)
 
 ---
 
