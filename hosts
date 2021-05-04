@@ -3,8 +3,8 @@ all:
         mc_server:
             ansible_host: 35.180.251.1
 
-            # Remote host password (not needed depending on SSH config)
-            #ansible_password = toto123lol
+            # Remote host password (incase ssh password auth)
+            #ansible_password = yourpassword
 
-            # private key (needed to ssh to aws box)
+            # Private key file path (incase ssh private key auth)
             ansible_ssh_private_key_file: "mc-serv.pem"
