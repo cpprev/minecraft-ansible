@@ -1,2 +1,3 @@
 *.swp
 ansible.cfg
+mc-serv.pem
