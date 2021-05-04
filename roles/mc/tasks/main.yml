@@ -9,7 +9,7 @@
 
 -   name: download server.jar
     get_url:
-        url: https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
+        url: "{{ mc_dl_link }}"
         dest: "{{ remote_mc_dir }}/minecraft_server.jar"
         mode: a+x
         owner: "{{ user }}"
