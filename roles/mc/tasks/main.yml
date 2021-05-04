@@ -15,10 +15,18 @@
         owner: "{{ user }}"
         group: "{{ group }}"
 
--   name: create eula.txt file to be able to execute the server
+-   name: copy eula.txt file to be able to execute the server
     template:
         src: eula.txt
         dest: "{{ remote_mc_dir }}/eula.txt"
+        mode: "0644"
+        owner: "{{ user }}"
+        group: "{{ group }}"
+
+-   name: copy server.properties file
+    template:
+        src: server.properties
+        dest: "{{ remote_mc_dir }}/server.properties"
         mode: "0644"
         owner: "{{ user }}"
         group: "{{ group }}"

@@ -1,3 +1,9 @@
+# What to change to adapt to your infrastructure
+
+    file "hosts" and change ansible_host variable
+
+    file "group_vars/all" and change user and group variables
+
 # Install the server prerequisites
 
     ansible-playbook -i hosts --become --ask-become-pass --extra-vars "ansible_password=toto123lol" install-server.yml
