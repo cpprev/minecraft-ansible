@@ -2,8 +2,10 @@
 
     ansible-playbook -i hosts --become --ask-become-pass --extra-vars "ansible_password=toto123lol" install-server.yml
 
-# Run / Stop the server (listens on port 25565)
+# Run the server (listens on port 25565)
 
     ansible-playbook -i hosts --become --ask-become-pass --extra-vars "ansible_password=toto123lol" run-server.yml
-#
-    CTRL + C when command above is executed to stop it
+
+# Stop the server (when command above is executed and running)
+    
+    CTRL + C
