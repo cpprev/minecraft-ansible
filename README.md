@@ -15,7 +15,7 @@
 
     file "group_vars/all" :
     - change "user" and "group" variables
-    - change mc_dl_link variiables to the minecraft server version you want to deploy
+    - change "mc_dl_link" variable to the minecraft server download link you want to deploy (currently 1.16.X, see : https://www.minecraft.net/en-us/download/server)
 
     file "roles/mc/templates/server.properties" :
     - adapt to the server properties you want to use for your server
