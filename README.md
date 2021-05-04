@@ -20,7 +20,7 @@ in file "group_vars/all" :
     - change "mc_dl_link" variable to the minecraft server download link you want to deploy 
       (currently 1.16.X, see : https://www.minecraft.net/en-us/download/server)
 
-in file "roles/mc/templates/server.properties" :
+in file "roles/mc/templates/server.properties.j2" :
 
     - adapt to the server properties you want to use for your server
 
