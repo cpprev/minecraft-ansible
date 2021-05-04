@@ -1,4 +1,4 @@
--   hosts: mc_serv
+-   hosts: mc_server
     remote_user: prev
     roles:
     -   base
