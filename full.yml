@@ -1,5 +1,6 @@
 -   hosts: mc_serv
     remote_user: prev
     roles:
+    -   base
     -   java
     -   mc
