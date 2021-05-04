@@ -1,4 +1,4 @@
-# minecraft-ansible
+# Minecraft Server - Ansible deployment
 
 ---
 
@@ -10,21 +10,21 @@
 
 ## What to change to adapt to your infrastructure
 
-in file "hosts" :
+In file "hosts" :
 
-    - change "ansible_host" variable to your remote host IP address
-    - change "ansible_password" in case you need password ssh authentication
-    - change "ansible_ssh_private_key_file" in case you need private key ssh authentication
+    - Change "ansible_host" variable to your remote host IP address.
+    - Change "ansible_password" in case you need password ssh authentication.
+    - Change "ansible_ssh_private_key_file" in case you need private key ssh authentication.
 
-in file "group_vars/all" :
+In file "group_vars/all" :
 
-    - change "user" and "group" variables to your remote host user
-    - change "mc_dl_link" variable to the minecraft server download link you want to deploy 
-      (currently 1.16.X, see : https://www.minecraft.net/en-us/download/server)
+    - Change "user" and "group" variables to your remote host user.
+    - Change "mc_dl_link" variable to the minecraft server download link you want to deploy 
+      (currently 1.16.X, see : https://www.minecraft.net/en-us/download/server).
 
-in file "roles/mc/templates/server.properties.j2" :
+In file "roles/mc/templates/server.properties.j2" :
 
-    - adapt to the server properties you want for your server (map size, slots, ...)
+    - Adapt the server properties you want for your server (map size, slots, ...).
 
 ---
 
