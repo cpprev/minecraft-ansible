@@ -30,15 +30,25 @@ In file "roles/mc/templates/server.properties.j2" :
 
 ## Install the server prerequisites
 
+If sudo password is required on remote host :
+
     ansible-playbook -i hosts --become --ask-become-pass install-server.yml
-    (after which you need to enter your sudo password if required on remote host)
+
+Else :
+
+    ansible-playbook -i hosts --become install-server.yml
 
 ---
 
 ## Run the server (listens on port 25565)
 
+If sudo password is required on remote host :
+
     ansible-playbook -i hosts --become --ask-become-pass run-server.yml
-    (after which you need to enter your sudo password if required on remote host)
+
+Else :
+
+    ansible-playbook -i hosts --become run-server.yml
 
 ## Stop the server (when command above is running)
     
